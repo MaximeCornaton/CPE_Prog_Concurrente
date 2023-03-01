@@ -1,0 +1,24 @@
+
+
+"""
+"""
+@author: maxime.cornaton
+# -*- coding: utf-8 -*-
+Created on Mon May  9 13:42:56 2022
+(dfr,dfw) = os.pipe()
+else : #Processus fils
+if pid != 0 : #Processus Père
+import os , sys # Communication par tube anonyme os.pipe()
+msg = "messagePERE"
+    msgReception = os.read(dfr , len(msg)).decode()
+    n = len(msgReception)
+    n = os.write(dfw , msg.encode())
+    os.close(dfr)
+    os.close(dfr)
+    os.close(dfw)
+    os.close(dfw)
+pid = os.fork()
+    print ("Le processus %d:%d octets, message recu est %s \n" %(os.getpid(), n, msgReception))
+    print ("Le processus %d:%d octets, message transmis est %s \n" %(os.getpid() , n , msg))
+sys.exit(0)
+#!/usr/bin/env python3
